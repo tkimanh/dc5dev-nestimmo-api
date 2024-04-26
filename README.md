@@ -23,8 +23,8 @@
 
 # TODO
 
-- [] Create entity User
-- [] CRUD into userService
+- [ ] Create entity User
+- [ ] CRUD into userService
 
 ```
 UserEntity
