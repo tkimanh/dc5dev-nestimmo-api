@@ -19,3 +19,16 @@
   # Install config
   npm i @nestjs/config
 ```
+
+
+# TODO
+
+- [] Create entity User
+- [] CRUD into userService
+
+```
+UserEntity
+  - id
+  - username
+  - email
+```

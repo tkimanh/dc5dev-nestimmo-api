@@ -67,6 +67,18 @@ export class PostService {
   }
 
   remove(id: number) {
-    return `This action removes a #${id} post`;
+    try {
+      const post = this.postRepository.createQueryBuilder('post')
+       .where('post.id = :id', { id: id })
+       .delete()
+       .execute()
+
+       return post;
+    } catch (error) {
+      throw new HttpException(
+        error.message,
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
   }
 }
