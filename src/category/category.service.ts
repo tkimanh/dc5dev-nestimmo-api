@@ -12,7 +12,7 @@ export class CategoryService {
     private readonly categoryRepository: Repository<CategoryEntity>,
   ) {}
 
-  create(createCategoryDto: CreateCategoryDto) {
+  create(CreateCategoryDto: CreateCategoryDto) {
     console.log(CreateCategoryDto);
     try {
       const category = this.categoryRepository.create(CreateCategoryDto);
