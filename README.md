@@ -1,5 +1,7 @@
 # Start project
 
+DC5 DEV - Kim-Anh TRAN
+
 ```bash
   # Install dependencies
   npm install
@@ -9,8 +11,8 @@
   npm run dev
 ```
 
-
 # Dev line code
+
 ```bash
   # Create module with service ....
   nest generate resource post
@@ -19,7 +21,6 @@
   # Install config
   npm i @nestjs/config
 ```
-
 
 # TODO
 
